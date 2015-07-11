@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?><!--Comment--><testsuites>
+  <testsuite timestamp="01.07.2015">
+    <testcase classname="Test_010_TFW_Header_Login.xlsx" name="Test">
+      <system-out>2015.07.01 12:53:45 	{Component=Open, URL=http://hldlx04.berner.lan:9001/bernerstorefront/de-de/start, Browser=FF}</system-out>
+      <system-out>2015.07.01 12:53:55 	{Component=BernerHeader, LoginRegistrieren=&lt;Click&gt;}</system-out>
+      <system-out>2015.07.01 12:54:04 	{Component=Login, EMail=1.tester.default@berner.de, Password=1234-1}</system-out>
+      <system-out>2015.07.01 12:54:11 	{CloseCookies=&lt;Click&gt;, Component=Login}</system-out>
+      <system-out>2015.07.01 12:54:12 	{Sec=3, Component=Wait}</system-out>
+      <system-out>2015.07.01 12:54:16 	{Component=Login, Anmelden=&lt;Click&gt;}</system-out>
+      <system-out>2015.07.01 12:54:19 	{Willkommen=&lt;Check mid Tester1 Test1&gt;, Component=BernerHeader}</system-out>
+      <system-out>PASSED - Expected: Tester1 Test1  Actual: Willkommen
+Tester1 Test1</system-out>
+      <system-out>2015.07.01 12:54:28 	{Willkommen=&lt;Check mid Dagobert Duck&gt;, Component=BernerHeader}</system-out>
+      <error message="FAILED" type="Assertion">FAILED - Expected: Dagobert Duck  Actual: Willkommen
+Tester1 Test1</error>
+      <system-out>2015.07.01 12:54:37 	{Component=Logout}</system-out>
+      <system-out>2015.07.01 12:55:01 	{Component=Close}</system-out>
+    </testcase>
+    <testcase classname="Test_011_TFW_Overlay_Login.xlsx" name="Test">
+      <system-out>2015.07.01 12:55:08 	{Component=Open, URL=http://hldlx04.berner.lan:9001/bernerstorefront/de-de/p_ProductName_91952.html, Browser=CH}</system-out>
+      <system-out>2015.07.01 12:55:24 	{Login=&lt;Hover&gt;, Component=BernerHeader}</system-out>
+      <system-out>2015.07.01 12:55:35 	{Component=OverlayLogin, EMail=invalid@email.de}</system-out>
+      <system-out>2015.07.01 12:55:40 	{Login=&lt;Click&gt;, Component=OverlayLogin}</system-out>
+      <system-out>2015.07.01 12:55:44 	{UserNotFound=&lt;Check value User nicht gefunden&gt;, Component=OverlayLogin}</system-out>
+      <system-out>PASSED - Expected: User nicht gefunden  Actual: User nicht gefunden</system-out>
+      <system-out>2015.07.01 12:55:47 	{Component=OverlayLogin, EMail=&lt;Clear&gt;}</system-out>
+      <system-out>2015.07.01 12:55:49 	{Component=OverlayLogin, EMail=Magdalena.piller@ecube.de}</system-out>
+      <system-out>2015.07.01 12:55:55 	{Login=&lt;Click&gt;, Component=OverlayLogin}</system-out>
+      <system-out>2015.07.01 12:55:58 	{Component=OverlayLogin, BadCredentials=&lt;Check value E-Mail und Passwort Kombination ist falsch!&gt;}</system-out>
+      <error message="FAILED" type="Assertion">FAILED - Expected: E-Mail und Passwort Kombination ist falsch!  Actual: </error>
+      <system-out>2015.07.01 12:56:00 	{Component=OverlayLogin, Password=berner}</system-out>
+      <system-out>2015.07.01 12:56:05 	{Login=&lt;Click&gt;, Component=OverlayLogin}</system-out>
+      <system-out>2015.07.01 12:56:08 	{Willkommen=&lt;Check mid Daisy Duck&gt;, Component=BernerHeader}</system-out>
+      <error message="FAILED" type="Element not found at runtime">FAILED - GUI Element not found - XPath: //a[contains(@href, '/bernerstorefront/de-de/myberner/overview')]</error>
+      <system-out>2015.07.01 12:56:48 	{Component=Close}</system-out>
+    </testcase>
+    <testcase classname="Test_012_TFW_URL_Login.xlsx" name="Test">
+      <system-out>2015.07.01 12:56:51 	{Component=Open, URL=http://hldlx04.berner.lan:9001/bernerstorefront/de-de/login, Browser=CH}</system-out>
+      <system-out>2015.07.01 12:56:59 	{Component=Login, EMail=1.tester.default@berner.de, Password=1234-1}</system-out>
+      <system-out>2015.07.01 12:57:08 	{CookiesAktivieren=&lt;Click&gt;, Component=Login}</system-out>
+      <system-out>2015.07.01 12:57:09 	{Sec=3, Component=Wait}</system-out>
+      <system-out>2015.07.01 12:57:13 	{Component=Login, Anmelden=&lt;Click&gt;}</system-out>
+      <system-out>2015.07.01 12:57:19 	{Willkommen=&lt;Check mid Tester1 Test1&gt;, Component=BernerHeader}</system-out>
+      <system-out>PASSED - Expected: Tester1 Test1  Actual: Willkommen
+Tester1 Test1</system-out>
+      <system-out>2015.07.01 12:57:29 	{Component=Logout}</system-out>
+      <system-out>2015.07.01 12:57:45 	{Component=Close}</system-out>
+    </testcase>
+    <testcase classname="Test_013_TFW_Cart_Login.xlsx" name="Test">
+      <system-out>2015.07.01 12:57:47 	{Component=Call LoginBestellung}</system-out>
+      <system-out>2015.07.01 12:57:47 	{Component=Open, URL=http://hldlx04.berner.lan:9001/bernerstorefront/de-de/start, Browser=FF}</system-out>
+      <system-out>2015.07.01 12:58:00 	{Warenkorb=&lt;Click&gt;, Component=BernerHeader}</system-out>
+      <system-out>2015.07.01 12:58:09 	{Artikelnummern=120494, WarenkorbPlus=&lt;Click&gt;, Component=Warenkorb}</system-out>
+      <system-out>2015.07.01 12:58:12 	{ZurKasse=&lt;Click&gt;, Component=Warenkorb}</system-out>
+      <system-out>2015.07.01 12:58:14 	{IhreKundendaten=1.tester.default@berner.de, Component=Lieferart, Passwort=1234-1}</system-out>
+      <system-out>2015.07.01 12:58:23 	{Login=&lt;Click&gt;, Component=Lieferart}</system-out>
+      <system-out>2015.07.01 12:58:26 	{Component=Warenkorb, OK=&lt;Click&gt;}</system-out>
+      <error message="FAILED" type="Element not found at runtime">FAILED - GUI Element not found - Link Text: OK</error>
+      <system-out>2015.07.01 12:58:57 	{ZurKasse=&lt;Click&gt;, Component=Warenkorb}</system-out>
+    </testcase>
+  </testsuite>
+</testsuites>

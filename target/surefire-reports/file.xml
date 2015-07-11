@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?><!--Comment--><testsuites>
+  <testsuite timestamp="11.07.2015">
+    <testcase classname="Demo_01_TFW_Google.xls" name="Test">
+      <system-out>2015.07.11 08:23:31 	{Component=Open, URL=http://www.goggle.de, Browser=FF}</system-out>
+      <system-out>2015.07.11 08:23:40 	{Search=HP ALM, Component=GOOGLE_Search}</system-out>
+      <system-out>2015.07.11 08:23:43 	{Start=&lt;Click&gt;, Component=GOOGLE_Search}</system-out>
+    </testcase>
+  </testsuite>
+</testsuites>

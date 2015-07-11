@@ -1,0 +1,3 @@
+Folder for Browser Drivers which implements the WebDriver's wire protocol
+
+wire protocol: https://code.google.com/p/selenium/wiki/JsonWireProtocol
